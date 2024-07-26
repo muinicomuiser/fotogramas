@@ -1,0 +1,119 @@
+Escenario:
+La empresa “Fotogramas” busca crear una red social dedicada a la fotografía, donde los
+usuarios puedan compartir sus imágenes, conectar con otros amantes de la fotografía, y
+explorar un universo visual vibrante. La idea es que Fotogramas se convierta en un espacio
+donde los fotógrafos profesionales y aficionados puedan mostrar su trabajo, recibir
+retroalimentación y descubrir nuevas tendencias.
+Fotogramas ha contratado a tu equipo de desarrollo para crear la plataforma de la red social.
+Tu tarea es diseñar y construir la aplicación utilizando los conceptos de la programación
+orientada a objetos.
+
+Objetivo:
+Identifica los objetos que serían necesarios para modelar este sistema de reclutamiento.
+
+Usuario:
+    ● nombreUsuario: identificador único del usuario
+    ● email: correo electrónico del usuario
+    ● password: contraseña del usuario
+    ● fechaRegistro: fecha de creación de la cuenta
+    ● fotoPerfil: ruta a la imagen de perfil del usuario
+    ● seguidores: usuarios que siguen a este usuario
+    ● siguiendo: usuarios que este usuario sigue
+    ● fotosSubidas: fotos que este usuario ha subido
+
+Foto
+    ● id: identificador único de la foto, generado automáticamente
+    ● ruta: ruta al archivo de imagen de la foto
+    ● descripcion: descripción de la foto
+    ● hashtags: lista de hashtags asociados a la foto
+    ● fechaSubida: fecha en la que se subió la foto
+    ● usuario: usuario que subió la foto
+    ● meGusta: lista de usuarios que le han dado "me gusta" a la foto
+    ● comentarios: lista de comentarios asociados a la foto
+
+Comentario
+    ● id: identificador único del comentario, generado automáticamente
+    ● texto: texto del comentario
+    ● fecha: fecha y hora en la que se escribió el comentario
+    ● usuario: usuario que escribió el comentario
+
+Relaciones
+    ● Un Usuario puede subir muchas Fotos.
+    ● Una Foto pertenece a un único Usuario.
+    ● Un Usuario puede seguir a muchos otros Usuarios.
+    ● Un Usuario puede dar "Me gusta" a muchas Fotos.
+    ● Un Usuario puede comentar muchas Fotos.
+    ● Una Foto puede tener muchos Comentarios.
+    ● Un Comentario pertenece a una única Foto.
+
+
+Actividades:
+
+1. Crea un nuevo proyecto utilizando nestjs llamado “fotogramas-backend”
+
+2. Crea un nuevo repositorio en github llamado “fotogramas-backend”
+
+3. Sincroniza tu repositorio local con el repositorio de github
+
+4. Identifica las clases necesarias según el escenario planteado y por cada clase define los
+atributos especificando el tipo de dato necesario.
+
+5. Crea las siguientes clases y sus relaciones en la carpeta models
+    a. Usuario
+    b. Foto
+    c. Comentario
+
+6. Haz un commit con el mensaje “Modelo creado” y luego haz un push al repositorio de
+github.
+
+7. Crea una nueva rama en tu repositorio local llamada “feature_usuarios”
+
+8. Crea el controlador para Usuarios que permita realizar las siguientes acciones
+    a. Registrar un nuevo usuario
+    b. Obtener un usuario según su nombreUsuario
+    c. Obtener todos los usuarios
+    d. Eliminar un usuario según su nombreUsuario
+    e. Editar foto de perfil
+    f. Seguir a un usuario
+
+9. Crea un servicio para almacenar los datos de los usuarios y que permita dar soporte a
+las acciones que maneja el controlador de usuarios
+    a. Registrar un nuevo usuario (Verificar si existe el usuario según el correo
+    ingresado y que el nombreUsuario sea único)
+    b. Obtener un usuario según su nombreUsuario, en caso de que el usuario no exista
+    devolver el código 404.
+    c. Obtener todos los usuarios (Excluir la password en la lista )
+    d. Eliminar un usuarios según su nombreUsuario
+    e. Editar foto de perfil (Solo debe permitir actualizar este campo)
+    f. Seguir a un usuario (Debe validar que el usuario al que se desea seguir exista y que
+    no tenga como seguidor al usuario solicitante )
+
+10. Haz un commit con el mensaje “Módulo de usuarios” y luego haz un push al
+repositorio de github usando la rama “feature_usuarios”.
+
+11. Haz un pull request hacia la rama master en github
+
+12. En el repositorio local cambiarse a la rama ‘main’
+
+13. Sincronizar los cambios con el repositorio remoto
+
+14. Crear una nueva rama llamada “feature_fotos”
+
+15. Crea el controlador para Fotos que permita realizar las siguientes acciones
+    a. subir una nueva foto
+    b. Obtener una foto según su id
+    c. Obtener todas las fotos dado un usuario
+    d. Eliminar una foto según su id
+
+16. Crea un servicio para almacenar los datos de las fotos y que permita dar soporte a las
+acciones que maneja el controlador de fotos
+    a. Crear una nueva foto, debe verificar que el usuario exista y además agregarlo a
+    la lista de sus fotos subidas
+    b. Obtener una foto según su id
+    c. Obtener todas las fotos segun un usuario
+    d. Eliminar una foto según su id
+
+17. Haz un commit con el mensaje “Módulo de fotos” y luego haz un push al repositorio de
+github usando la rama “feature_fotos”.
+
+18. Repite los pasos 11, 12, 13
