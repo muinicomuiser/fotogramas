@@ -77,30 +77,9 @@ export class UsuariosService {
         if(this.usuarios.length > 0){
             if(this.buscarNombre(nombre) == true)
             return Usuario.obtenerUsuarioDTO(this.usuarios.find((usuario) => usuario.nombreUsuario == nombre));
-            // for(let usuario of this.usuarios){
-            //     if(usuario.nombreUsuario == nombre){
-            //         return this.convertirDTO(usuario);
-            //     }
-            // }
         }
         return null;
     }
-
-    /**Retorna una versión modificada del objeto usuario, sin contraseña y con la información de usuarios seguidores y seguidos reducida a un arreglo
-     * solo de nombres.
-     */
-    // convertirDTO(usuario: Usuario): UsuarioDTO{
-    //     let seguidoresString: string[] = [];
-    //     let seguidosString: string[] = [];
-    //     for(let seguidor of usuario.seguidores){
-    //         seguidoresString.push(seguidor.nombreUsuario);
-    //     }
-    //     for(let seguido of usuario.siguiendo){
-    //         seguidosString.push(seguido.nombreUsuario);
-    //     }
-    //     let DTO: UsuarioDTO = Usuario.obtenerUsuarioDTO(usuario);
-    //     return DTO;
-    // }
 
     /**Retorna el registro completo de usuarios como objetos usuariosDTO, sin contraseña y con los datos de seguidores y seguidos
      * reducidos solo al nombre de usuario.
@@ -117,13 +96,6 @@ export class UsuariosService {
      * Retorna true si hay coincidencia y se realiza la eliminación, o false si no hay coincidencias. 
     */
     eliminarUsuarioPorNombre(nombre: string): boolean{        
-        // let idEliminar: number = -1;
-        // for(let indice: number = 0; indice < this.usuarios.length; indice++){
-            //     if(this.usuarios[indice].nombreUsuario == nombre){
-                //         idEliminar = indice;
-                //         break;
-                //     }
-                // }
         let idEliminar: number = this.indiceUsuarioPorNombre(nombre);
         if(idEliminar != -1){
             this.usuarios.splice(idEliminar, 1);
