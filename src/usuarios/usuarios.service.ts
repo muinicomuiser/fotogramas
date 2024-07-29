@@ -18,11 +18,11 @@ export class UsuariosService {
             return 1;
         }
         for(let usuarioRegistrado of this.usuarios){
-            if(this.compararEmails(usuario, usuarioRegistrado) == true){
+            if(this.compararEmail(usuario, usuarioRegistrado) == true){
                 return -1
             }
         }
-        if(this.buscarNombre(usuario.nombreUsuario) == true){
+        if(this.comprobarNombre(usuario.nombreUsuario) == true){
             return -2;
         }
         this.usuarios.push(usuario);
@@ -34,7 +34,7 @@ export class UsuariosService {
      * Retorna true si coinciden y false si no coinciden.       
      * Si no se ingresa un segundo usuario a comprarar, comparará el email del usuario con todo el registro de usuarios.
      */
-    compararEmails(usuario: Usuario, usuarioDos?: Usuario): boolean{
+    compararEmail(usuario: Usuario, usuarioDos?: Usuario): boolean{
         if(usuarioDos){
             if(usuario.email == usuarioDos.email){
                 return true;
@@ -50,11 +50,11 @@ export class UsuariosService {
         return false;
     }
 
-    /**Busca el nombre de usuario ingresado en una lista de usuarios.        
+    /**Comprueba si el nombre de usuario ingresado existe en una lista de usuarios.        
      * Retorna true si encuentra una coincidencia y false si no la encuentra.       
-     * Si no se ingresa una lista de usuarios, comparará el nombre del usuario con todo el registro de usuarios.
+     * Si no se ingresa una lista de usuarios, comparará el nombre del usuario con toda la lista de usuarios registrados.
      */
-    buscarNombre(nombre: string, listaUsuarios?: UsuarioDTO[]): boolean{
+    comprobarNombre(nombre: string, listaUsuarios?: UsuarioDTO[]): boolean{
         if(listaUsuarios){            
             if(listaUsuarios.findIndex((usuario) => usuario.nombreUsuario == nombre) != -1){
                 return true;
@@ -75,7 +75,7 @@ export class UsuariosService {
     */
     obtenerPorNombre(nombre: string): UsuarioDTO{
         if(this.usuarios.length > 0){
-            if(this.buscarNombre(nombre) == true)
+            if(this.comprobarNombre(nombre) == true)
             return Usuario.obtenerUsuarioDTO(this.usuarios.find((usuario) => usuario.nombreUsuario == nombre));
         }
         return null;
@@ -111,7 +111,7 @@ export class UsuariosService {
      * Retorna -2 si no existe foto de perfil en el usuarioDTO ingresado.
     */
     reemplazarFotoPerfil(usuarioFotoNueva: UsuarioDTO): number{
-        if(this.buscarNombre(usuarioFotoNueva.nombreUsuario) == false){
+        if(this.comprobarNombre(usuarioFotoNueva.nombreUsuario) == false){
             return -1;
         }
         if(usuarioFotoNueva.fotoPerfil == ""){
@@ -128,12 +128,12 @@ export class UsuariosService {
      * Retorna -2 si el usuario seguidor ya está en la lista de seguidores del usuario a seguir.
     */
     seguirUsuario(usuarioSeguidor: UsuarioDTO, nombreUsuarioSeguido: string): number{
-        if(this.buscarNombre(nombreUsuarioSeguido) == false){
+        if(this.comprobarNombre(nombreUsuarioSeguido) == false){
             return -1;
         }
         let idSeguido: number = this.indiceUsuarioPorNombre(nombreUsuarioSeguido);
         let idSeguidor: number = this.indiceUsuarioPorNombre(usuarioSeguidor.nombreUsuario);
-        if(this.buscarNombre(usuarioSeguidor.nombreUsuario, this.usuarios[idSeguido].seguidores) == true){
+        if(this.comprobarNombre(usuarioSeguidor.nombreUsuario, this.usuarios[idSeguido].seguidores) == true){
             return -2;
         }
         this.usuarios[idSeguido].seguidores.push({nombreUsuario: usuarioSeguidor.nombreUsuario});
