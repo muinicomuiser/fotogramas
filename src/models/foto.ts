@@ -1,5 +1,5 @@
 import { Comentario } from "./comentario";
-import { Usuario } from "./usuario";
+import { UsuarioDTO } from "./usuarioDTO";
 
 export class Foto{
     id: number; 
@@ -7,10 +7,10 @@ export class Foto{
     decripcion: string;
     hashtags: string;
     fechaSubida: Date;
-    usuario: Usuario;
-    meGusta: Usuario[];
+    usuario: UsuarioDTO;
+    meGusta: UsuarioDTO[];
     comentarios: Comentario[];
-    constructor(ruta: string, descripcion: string, hashtags: string, usuario: Usuario, meGusta: Usuario[] = [], comentarios: Comentario[] = []){
+    constructor(ruta: string, descripcion: string, hashtags: string, usuario: UsuarioDTO, meGusta: UsuarioDTO[] = [], comentarios: Comentario[] = []){
         this.ruta = ruta;
         this.decripcion = descripcion;
         this.hashtags = hashtags;

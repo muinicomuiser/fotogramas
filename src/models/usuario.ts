@@ -1,4 +1,3 @@
-import { Foto } from "./foto";
 import { UsuarioDTO } from "./usuarioDTO";
 export class Usuario{
     nombreUsuario: string;
@@ -8,8 +7,8 @@ export class Usuario{
     fotoPerfil: string;  //url
     seguidores: UsuarioDTO[];
     siguiendo: UsuarioDTO[];
-    fotosSubidas: Foto[];
-    constructor(nombreUsuario: string, email: string, password: string, fotoPerfil: string = '', seguidores: UsuarioDTO[] = [], siguiendo: UsuarioDTO[] = [], fotosSubidas: Foto[] = []){
+    fotosSubidas: number[];
+    constructor(nombreUsuario: string, email: string, password: string, fotoPerfil: string = '', seguidores: UsuarioDTO[] = [], siguiendo: UsuarioDTO[] = [], fotosSubidas: number[] = []){
         this.nombreUsuario = nombreUsuario;
         this.email = email;
         this.password = password;
