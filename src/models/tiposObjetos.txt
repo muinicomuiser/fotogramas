@@ -1,0 +1,43 @@
+usuario:     {"nombreUsuario":"juan","email":"correo.com","password":"hola23","fechaRegistro":"2024-07-29T15:30:03.402Z","fotoPerfil":"sdkjs3d.com","seguidores":[],"siguiendo":[],"fotosSubidas":[]}
+
+
+usuario:     {"nombreUsuario":"pedro","email":"maildos.com","password":"hola324","fechaRegistro":"2024-07-29T15:30:03.402Z","fotoPerfil":"sdkasdhd.com","seguidores":[],"siguiendo":[],"fotosSubidas":[]}
+
+
+usuario:     {"nombreUsuario":"juana","email":"mail3.com","password":"hol23a23","fechaRegistro":"2024-07-29T15:30:03.402Z","fotoPerfil":"sdds.com","seguidores":[],"siguiendo":[],"fotosSubidas":[]}
+
+
+usuario:     {"nombreUsuario":"pedra","email":"mail.com","password":"ho23lda23","fechaRegistro":"2024-07-29T15:30:03.402Z","fotoPerfil":"kjkj.com","seguidores":[],"siguiendo":[],"fotosSubidas":[]}
+
+
+comentario:     {"texto":"muy weno","fecha":"2024-07-29T15:30:03.402Z","usuario":{"nombreUsuario":"juan","email":"correo.com","password":"hola23","fechaRegistro":"2024-07-29T15:30:03.402Z","fotoPerfil":"sdkjs3d.com","seguidores":[],"siguiendo":[],"fotosSubidas":[]}}
+
+
+comentario:     {"texto":"bien weno","fecha":"2024-07-29T15:30:03.402Z","usuario":{"nombreUsuario":"pedro","email":"maildos.com","password":"hola324","fechaRegistro":"2024-07-29T15:30:03.402Z","fotoPerfil":"sdkasdhd.com","seguidores":[],"siguiendo":[],"fotosSubidas":[]}}
+
+
+comentario:     {"texto":"bastante weno","fecha":"2024-07-29T15:30:03.402Z","usuario":{"nombreUsuario":"juana","email":"mail3.com","password":"hol23a23","fechaRegistro":"2024-07-29T15:30:03.402Z","fotoPerfil":"sdds.com","seguidores":[],"siguiendo":[],"fotosSubidas":[]}}
+
+
+comentario:     {"texto":"terrible weno","fecha":"2024-07-29T15:30:03.402Z","usuario":{"nombreUsuario":"pedra","email":"mail.com","password":"ho23lda23","fechaRegistro":"2024-07-29T15:30:03.402Z","fotoPerfil":"kjkj.com","seguidores":[],"siguiendo":[],"fotosSubidas":[]}}
+
+
+foto:     {"ruta":"kkkkk.com","decripcion":"mi foto 1","hashtags":"#foto #primera","fechaSubida":"2024-07-29T15:30:03.402Z","usuario":{"nombreUsuario":"juan","email":"correo.com","password":"hola23","fechaRegistro":"2024-07-29T15:30:03.402Z","fotoPerfil":"sdkjs3d.com","seguidores":[],"siguiendo":[],"fotosSubidas":[]},"meGusta":[],"comentarios":[{"texto":"muy weno","fecha":"2024-07-29T15:30:03.402Z","usuario":
+{"nombreUsuario":"juan","email":"correo.com","password":"hola23","fechaRegistro":"2024-07-29T15:30:03.402Z","fotoPerfil":"sdkjs3d.com","seguidores":[],"siguiendo":[],"fotosSubidas":[]}},{"texto":"bien weno","fecha":"2024-07-29T15:30:03.402Z","usuario":
+{"nombreUsuario":"pedro","email":"maildos.com","password":"hola324","fechaRegistro":"2024-07-29T15:30:03.402Z","fotoPerfil":"sdkasdhd.com","seguidores":[],"siguiendo":[],"fotosSubidas":[]}}]}
+
+
+foto:     {"ruta":"dddd.com","decripcion":"mi foto 2","hashtags":"#foto #primera","fechaSubida":"2024-07-29T15:30:03.402Z",
+"usuario":{"nombreUsuario":"juan","email":"correo.com","password":"hola23","fechaRegistro":"2024-07-29T15:30:03.402Z",
+"fotoPerfil":"sdkjs3d.com","seguidores":[],"siguiendo":[],"fotosSubidas":[]},"meGusta":[],
+"comentarios":[{"texto":"terrible weno","fecha":"2024-07-29T15:30:03.402Z",
+"usuario":{"nombreUsuario":"pedra","email":"mail.com","password":"ho23lda23","fechaRegistro":"2024-07-29T15:30:03.402Z","fotoPerfil":"kjkj.com",
+"seguidores":[],"siguiendo":[],"fotosSubidas":[]}},{"texto":"bien weno","fecha":"2024-07-29T15:30:03.402Z",
+"usuario":{"nombreUsuario":"pedro","email":"maildos.com","password":"hola324","fechaRegistro":"2024-07-29T15:30:03.402Z","fotoPerfil":"sdkasdhd.com",
+"seguidores":[],"siguiendo":[],"fotosSubidas":[]}}]}
+
+
+foto:     {"ruta":"eeee.com","decripcion":"mi foto 3","hashtags":"#foto #primera","fechaSubida":"2024-07-29T15:30:03.402Z","usuario":{"nombreUsuario":"pedro","email":"maildos.com","password":"hola324","fechaRegistro":"2024-07-29T15:30:03.402Z","fotoPerfil":"sdkasdhd.com","seguidores":[],"siguiendo":[],"fotosSubidas":[]},"meGusta":[],"comentarios":[{"texto":"bastante weno","fecha":"2024-07-29T15:30:03.402Z","usuario":{"nombreUsuario":"juana","email":"mail3.com","password":"hol23a23","fechaRegistro":"2024-07-29T15:30:03.402Z","fotoPerfil":"sdds.com","seguidores":[],"siguiendo":[],"fotosSubidas":[]}},{"texto":"bien weno","fecha":"2024-07-29T15:30:03.402Z","usuario":{"nombreUsuario":"pedro","email":"maildos.com","password":"hola324","fechaRegistro":"2024-07-29T15:30:03.402Z","fotoPerfil":"sdkasdhd.com","seguidores":[],"siguiendo":[],"fotosSubidas":[]}}]}
+
+
+foto:     {"ruta":"gggg.com","decripcion":"mi foto 4","hashtags":"#foto #primera","fechaSubida":"2024-07-29T15:30:03.402Z","usuario":{"nombreUsuario":"juana","email":"mail3.com","password":"hol23a23","fechaRegistro":"2024-07-29T15:30:03.402Z","fotoPerfil":"sdds.com","seguidores":[],"siguiendo":[],"fotosSubidas":[]},"meGusta":[],"comentarios":[{"texto":"terrible weno","fecha":"2024-07-29T15:30:03.402Z","usuario":{"nombreUsuario":"pedra","email":"mail.com","password":"ho23lda23","fechaRegistro":"2024-07-29T15:30:03.402Z","fotoPerfil":"kjkj.com","seguidores":[],"siguiendo":[],"fotosSubidas":[]}},{"texto":"bien weno","fecha":"2024-07-29T15:30:03.402Z","usuario":{"nombreUsuario":"pedro","email":"maildos.com","password":"hola324","fechaRegistro":"2024-07-29T15:30:03.402Z","fotoPerfil":"sdkasdhd.com","seguidores":[],"siguiendo":[],"fotosSubidas":[]}}]}

@@ -55,7 +55,7 @@ export class UsuariosController {
     }
 
     /**e. Editar foto de perfil.*/
-    @Put('perfil')
+    @Put('fotoPerfil')
     reemplazarFotoPerfil(@Body() usuarioFotoReemplazo: UsuarioDTO, @Res() response: Response): void{
         if(this.servicioUsuarios.reemplazarFotoPerfil(usuarioFotoReemplazo) == 1){
             response.status(200).send({mensaje: "Foto de perfil reemplazada exitosamente"});
