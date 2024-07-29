@@ -155,4 +155,25 @@ export class UsuariosService {
             return indice;
         }
     }
+    
+    /**Agrega la id de una foto al arreglo de fotos del usuario. */
+    agregarFoto(usuario: UsuarioDTO, idFoto: number): void{
+        let idUsuario: number = this.usuarios.findIndex((user) => user.nombreUsuario == usuario.nombreUsuario)
+        this.usuarios[idUsuario].fotosSubidas.push(idFoto);
+    }
+
+    /**Retorna el arreglo de ids de fotos del usuario cuyo nombre coincida con el nombre ingresado.*/
+    obtenerListaIdsFotosPorNombre(nombre: string): number[]{
+        let idUsuario = this.indiceUsuarioPorNombre(nombre);
+        return this.usuarios[idUsuario].fotosSubidas;
+    }
+
+    /**Elimina la foto cuyo id coincida con el ingresado, del usuario al que corresponda la foto. */
+    eliminarFoto(nombre: string, idFoto: number): void{
+        let idUsuario: number = this.indiceUsuarioPorNombre(nombre)
+        let indiceFoto: number = this.usuarios[idUsuario].fotosSubidas.findIndex((valor)=> valor == idFoto);
+        if(indiceFoto != -1){
+            this.usuarios[idUsuario].fotosSubidas.splice(indiceFoto, 1);
+        }
+    }
 }

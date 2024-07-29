@@ -1,4 +1,3 @@
-import { Foto } from "./foto";
 export type UsuarioDTO = {
     nombreUsuario: string;
     email?: string;
@@ -6,5 +5,5 @@ export type UsuarioDTO = {
     fotoPerfil?: string;  //url
     seguidores?: UsuarioDTO[];
     siguiendo?: UsuarioDTO[];
-    fotosSubidas?: Foto[];
+    fotosSubidas?: number[];
 }
