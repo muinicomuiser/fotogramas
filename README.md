@@ -1,8 +1,8 @@
 <p align="center">
-  Proyecto de aprendizaje para el Bootcamp de Backend del Departamento de Ciencias de la Computación de la Universidad de Chile.
+  Ejercicio del Bootcamp de Backend del Departamento de Ciencias de la Computación de la Universidad de Chile.
 </p>
 <p align="center">
-  La idea es crear endpoints para una aplicación tipo Instagram, que sea capaz de crear usuarios y agregar fotos y comentarios, además de considerar algunas interacciones típicas entre estos elementos. 
+  La idea es crear endpoints para una aplicación tipo Instagram, llamada "Fotogramas", que sea capaz de crear usuarios y agregar fotos y comentarios, además de considerar algunas interacciones típicas entre estos elementos. 
 </p>
 
 <p align="center">
